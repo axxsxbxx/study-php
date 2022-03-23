@@ -43,3 +43,16 @@ session_unset();
 // Remove Session file
 // 권장하고 있지는 않다. 가비지 컬렉터 돌리지 못하는 경우에 사용.
 session_destroy();
+
+
+// Get session status
+session_status();
+
+
+// Close session
+session_commit();
+
+
+// Regenerate session id
+// session id 노출되어서 보안에 위협이 될 것 같은 경우 (ex. 다시 로그인 하는 경우)
+session_regenerate_id();
